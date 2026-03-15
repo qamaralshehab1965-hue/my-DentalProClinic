@@ -1,0 +1,143 @@
+.services-manager {
+  padding: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.services-manager h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #0a7c86;
+}
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.services-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.services-table th {
+  background: linear-gradient(90deg, #0a7c86, #16a6b6);
+  color: white;
+  padding: 12px;
+  text-align: center;
+}
+
+.services-table td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.services-table tr:hover {
+  background: #f7f7f7;
+}
+
+.services-table input {
+  width: 90%;
+  padding: 6px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.services-table img {
+  border-radius: 6px;
+}
+
+.services-table button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.add-btn {
+  background: #0a7c86;
+}
+
+.update-btn {
+  background: #f39c12;
+}
+
+.edit-btn {
+  background: #f39c12;
+  margin-right: 5px;
+}
+
+.delete-btn {
+  background: #e74c3c;
+}
+
+.message-box {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.my-comments-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: #0a4d68;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+.my-comments-btn:hover {
+  background-color: #1a8fbf;
+}
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1500px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1000px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 850px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    max-width: 100%;
+  }
+}

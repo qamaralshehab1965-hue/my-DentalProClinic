@@ -1,0 +1,118 @@
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Segoe UI", sans-serif;
+
+  background-image: url("/ooo.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 20px;
+}
+
+.login-link {
+  color: #000000;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 350px;
+
+  padding: 40px;
+  border-radius: 14px;
+
+  background: rgba(255, 255, 255, 0.405);
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, 0.59);
+
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.608);
+
+  text-align: center;
+}
+
+.login-card h2 {
+  margin-bottom: 30px;
+  color: #176062;
+  font-weight: 600;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+
+  border-radius: 6px;
+  border: 1px solid #ddd;
+
+  outline: none;
+  text-align: left;
+
+  transition: 0.3s;
+}
+
+.login-card input:focus {
+  border-color: #237d7e;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+.login-card button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+
+  background: #177274;
+  color: white;
+
+  border: none;
+  border-radius: 6px;
+
+  font-weight: 600;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.login-card button:hover {
+  background: #09131375;
+}
+
+@media (max-width: 768px) {
+  .login-card {
+    max-width: 320px;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-card {
+    max-width: 95%;
+    padding: 25px;
+  }
+
+  .login-card h2 {
+    font-size: 22px;
+  }
+
+  .login-card input {
+    padding: 10px;
+  }
+
+  .login-card button {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 360px) {
+  .login-card {
+    padding: 20px;
+  }
+}

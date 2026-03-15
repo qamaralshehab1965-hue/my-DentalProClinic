@@ -1,0 +1,43 @@
+version: "3.8"
+
+services:
+  db:
+    image: postgres:15
+    container_name: dental_clinic
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 0000
+      POSTGRES_DB: dental_clinic
+    ports:
+      - "5432:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+  backend:
+    build: .
+    container_name: dental_clinic_backend
+    ports:
+      - "3000:3000"
+    environment:
+      PORT: 3000
+      PGHOST: db
+      PGUSER: postgres
+      PGPASSWORD: 0000
+      PGDATABASE: dental_clinic
+      PGPORT: 5432
+      JWT_SECRET: secret_key
+    depends_on:
+      - db
+
+  frontend:
+    build: ./frontend
+    container_name: dental_clinic_frontend
+    ports:
+      - "5173:5173"
+    environment:
+      HOST: 0.0.0.0
+    depends_on:
+      - backend
+
+volumes:
+  db_data:

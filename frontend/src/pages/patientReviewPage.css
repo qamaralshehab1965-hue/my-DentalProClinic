@@ -1,0 +1,168 @@
+.review-page {
+  min-height: 100vh;
+  text-align: left;
+  background-image: url("/860.jpeg");
+
+  background-size: cover;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  padding: 120px 20px;
+}
+
+.review-container {
+  width: 100%;
+
+  max-width: 650px;
+  text-align: left;
+  padding: 45px;
+
+  border-radius: 20px;
+
+  background: rgba(39, 37, 37, 0.179);
+
+  backdrop-filter: blur(14px);
+
+  -webkit-backdrop-filter: blur(14px);
+
+  border: 1px solid rgba(255, 255, 255, 0.6);
+
+  box-shadow:
+    0 25px 60px rgb(0, 0, 0),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 22px;
+
+  text-align: center;
+}
+
+.review-container h2 {
+  font-size: 32px;
+
+  color: #000000;
+
+  font-weight: 700;
+
+  margin-bottom: 10px;
+}
+
+.service-select {
+  width: 100%;
+  text-align: left;
+  padding: 12px;
+
+  border-radius: 10px;
+
+  border: 1px solid #201e1e;
+
+  font-size: 14px;
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+
+  gap: 12px;
+
+  font-size: 32px;
+
+  cursor: pointer;
+}
+
+.star {
+  color: #ffffff;
+
+  transition: 0.2s;
+}
+
+.star.active {
+  color: #ffcc00;
+}
+
+.star:hover {
+  transform: scale(1.2);
+
+  color: #facc15;
+}
+
+.review-container textarea {
+  width: 100%;
+  text-align: left;
+  height: 120px;
+
+  padding: 12px;
+
+  border-radius: 10px;
+
+  border: 1px solid #000000;
+
+  resize: none;
+
+  font-size: 14px;
+}
+
+.review-btn {
+  background: linear-gradient(45deg, #0ea5a8, #0f766e);
+
+  color: white;
+
+  border: none;
+
+  border-radius: 12px;
+
+  padding: 12px;
+
+  font-size: 15px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.review-btn:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+.review-warning {
+  color: #b91c1c;
+
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .review-container {
+    padding: 35px;
+
+    max-width: 90%;
+  }
+
+  .stars {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .review-container {
+    padding: 25px;
+  }
+
+  .review-container h2 {
+    font-size: 24px;
+  }
+}
