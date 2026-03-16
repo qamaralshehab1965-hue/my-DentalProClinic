@@ -42,7 +42,7 @@ function Doctor() {
 
     const interval = setInterval(() => {
       checkMyAppointment();
-    }, 5000);
+    }, 3000);
 
     return () => clearInterval(interval);
   }, [doctor_id]);
